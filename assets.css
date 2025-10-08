@@ -1,0 +1,69 @@
+/* Base */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  color:#1a1a1a; background:#f7f8fc; line-height:1.6;
+}
+img{max-width:100%; height:auto; display:block}
+a{text-decoration:none; color:#1e88e5}
+a:hover{color:#2196f3}
+
+/* Layout */
+.container{max-width:1100px; margin:0 auto; padding:1rem}
+.section{padding:2.5rem 0}
+.grid{display:grid; gap:1rem}
+.cards{display:grid; gap:1rem}
+.card{
+  background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:1rem;
+  box-shadow:0 8px 20px rgba(0,0,0,.04);
+}
+.img{border-radius:12px; border:1px solid #e5e7eb}
+
+/* Header/Nav/Footer */
+.header{position:sticky; top:0; background:#fff; border-bottom:1px solid #e5e7eb}
+.name{font-size:1.25rem; margin:0}
+.nav{list-style:none; display:flex; gap:.75rem; margin:.5rem 0 0; padding:0}
+.nav a{padding:.4rem .6rem; border-radius:8px}
+.nav a:hover{background:#eef6ff}
+.footer{border-top:1px solid #e5e7eb; background:#fafafa}
+
+/* Forms / Buttons */
+.contact-form{display:grid; gap:.6rem}
+input,textarea{
+  width:100%; padding:.65rem .75rem; border:1px solid #e5e7eb; border-radius:10px; font:inherit;
+  background:#fff
+}
+.btn{
+  display:inline-block; padding:.6rem 1rem; border-radius:10px; border:1px solid #1e88e5;
+  background:#1e88e5; color:#fff; font-weight:600;
+}
+.btn:hover{background:#2196f3; border-color:#2196f3}
+
+/* Awards gallery */
+.awards-gallery{
+  display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-top:10px
+}
+.award-img{
+  width:240px; height:auto; border-radius:12px; border:1px solid #e5e7eb;
+  box-shadow:0 8px 18px rgba(0,0,0,.08); transition:transform .25s ease
+}
+.award-img:hover{transform:scale(1.03)}
+
+/* Social links */
+.social-links{display:flex; gap:20px; align-items:center; flex-wrap:wrap; margin-top:16px}
+.contact-link{display:inline-flex; align-items:center; gap:6px; color:#1e88e5; font-weight:500}
+.contact-link:hover{color:#2196f3; transform:scale(1.03); transition:.2s ease}
+.icon{width:20px; height:20px}
+
+/* Responsive breakpoints per assignment */
+@media (min-width:576px){
+  .grid{grid-template-columns:1.2fr .8fr}
+  .cards{grid-template-columns:1fr 1fr}
+}
+@media (min-width:768px){
+  .nav{gap:1rem}
+}
+@media (min-width:992px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+}

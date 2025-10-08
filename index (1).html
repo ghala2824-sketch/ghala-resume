@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GHALA ALKURIMI</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <h1 class="name">GHALA SIRAJ ALKURIMRi</h1>
+
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section id="about" class="section">
+    <div class="container grid">
+      <div>
+        <h2>About ghala </h2>
+        <p><strong>Career Objective:</strong></p>
+        <p>
+          I am a Cybersecurity student at the University of Jeddah, passionate about learning how to protect systems, data, and people in the digital world.
+          I love exploring new technologies and constantly challenging myself to grow beyond limits.
+          I value teamwork and believe that great results come from collaboration, respect, and shared effort.
+          I always aim for excellence and perfection in everything I do — whether it's a class project or a personal goal.
+          My ambition is to become a skilled cybersecurity professional who combines strong technical knowledge with creativity, problem-solving, and leadership.
+        </p>
+
+        <ul class="list">
+          <li><strong>Email:</strong> <a href="mailto:Ghala.28_24@hotmail.com">Ghala.28_24@hotmail.com</a></li>
+          <li><strong>Phone:</strong> +966 568873156</li>
+          <li><strong>Location:</strong> Jeddah, Saudi Arabia</li>
+          <li><strong>Links:</strong> <a href="#">GitHub</a> • <a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+      <figure>
+        <img src="cv.jpg" alt="Portrait of YOUR NAME" class="img">
+      </figure>
+    </div>
+  </section>
+
+<section id="education" class="section">
+  <div class="container">
+    <h2>Education</h2>
+
+    <article class="card">
+      <h3>University of Jeddah — B.Sc. in Cybersecurity</h3>
+      <p>Sep 2021 – Jun 2025 • GPA: 4.50 / 5.00</p>
+      <p>College of Computer Engineering and Cybersecurity</p>
+      <p>Coursework: Operating Systems, Computer Networks, Software Engineering, Cryptography.</p>
+    </article>
+
+    <article class="card">
+      <h3>High School</h3>
+      <p>Sep 2019 – Jun 2021</p>
+    </article>
+
+    <article class="card">
+      <h3>Middle School — School 65</h3>
+      <p>Sep 2014 – Jun 2018</p>
+    </article>
+
+    <article class="card">
+      <h3>Elementary School — School 33</h3>
+      <p>Sep 2008 – Jun 2014</p>
+    </article>
+  </div>
+</section>
+
+
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="prj1.jpg" alt="Screenshot of Project 1" class="img">
+          <h3>Blackboard Improvement</h3>
+          <p>Redesign of LMS workflows focusing on accessibility and MFA. Java + SQL.</p>
+        </article>
+        <article class="card">
+          <img src="prj2.jpg" alt="Screenshot of Project 2" class="img">
+          <h3>Patient Management</h3>
+          <p>Tracks waiting vs history; shows urgent patients (≥8). Java + DS.</p>
+        </article>
+        <article class="card">
+          <img src="pr3.jpg" alt="Screenshot of Project 3" class="img">
+          <h3> Digital restaurant menu</h3>
+          <p> allow the customer to book and view the menu.</p>
+        </article>
+      </div>
+    </div>
+<section id="awards" class="section">
+  <div class="container">
+    <h2>Awards & Certificates</h2>
+
+    <article class="card">
+      <h3>Academic Excellence Certificates — 2022–2025</h3>
+      <p>Recognized for outstanding academic performance and excellence in Cybersecurity studies.</p>
+
+      <div class="awards-gallery">
+        <img src="a1.jpg" alt="Excellence Certificate 2022" class="award-img">
+        <img src="a2.jpg" alt="Excellence Certificate 2023" class="award-img">
+        <img src="a3.jpg" alt="Excellence Certificate 2024" class="award-img">
+     <img src="a4.jpg" alt="Excellence Certificate 2024" class="award-img">
+      </div>
+    </article>
+  </div>
+</section>
+
+    <div class="container" id="contact">
+      <h2>Contact</h2>
+
+      <form class="contact-form" action="#" method="post" autocomplete="on">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+
+      <div class="social-links">
+        <a href="mailto:ghala.28_24@hotmail.com" target="_blank" class="contact-link">
+          <img src="mail.png" alt="Outlook" class="icon">
+          Email
+        </a>
+
+        <a href="https://wa.me/966568873156" target="_blank" class="contact-link">
+          <img src="whats.png.png" alt="WhatsApp" class="icon">
+          WhatsApp
+        </a>
+
+        <a href="https://www.linkedin.com/in/ghala-sa-bb4523389/" target="_blank" class="contact-link">
+          <img src="link.png" alt="LinkedIn" class="icon">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span>   ghala siraj alkurimi</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
